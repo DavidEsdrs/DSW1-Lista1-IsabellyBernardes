@@ -1,0 +1,111 @@
+.header-primary {
+    clear: both;
+}
+
+.author-name {
+    text-align: right;
+}
+
+.paper-title,
+.guidelines-title {
+    text-align: center;
+    font-size: 12pt;
+    font-style: italic;
+}
+
+.main-title,
+.author-warning {
+    text-align: center;
+    font-weight: bold;
+    background-color: #ffff00;
+}
+
+.table-grid,
+.data-table {
+    width: 436.5pt; /* ou 429.45pt para data-table */
+    margin-bottom: 0pt;
+    border-collapse: collapse;
+}
+
+.cell,
+.data-cell {
+    padding-right: 5.4pt;
+    padding-left: 5.4pt;
+    vertical-align: top;
+    border: 0.75pt solid #c0c0c0; /* para data-cell */
+    background-color: #ffffff; /* para data-cell */
+}
+
+.header-cell {
+    border: solid 0.75pt;
+    background-color: #c0c0c0;
+}
+
+.paper-info,
+.text {
+}
+
+.author-photo {
+    margin-right: 9pt;
+    margin-left: 9pt;
+    float: left;
+    position: relative;
+}
+
+.footer-primary {
+    clear: both;
+}
+
+.page-number {
+    margin-bottom: 0pt;
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.hyperlink {
+    text-decoration: none;
+}
+
+.list-disc,
+.list-number {
+    margin: 0pt;
+    padding-left: 0pt;
+}
+
+.list-paragraph {
+    margin-left: 28.06pt; /* ou 30.61pt para list-number */
+    margin-bottom: 0pt;
+    padding-left: 7.94pt; /* ou 5.39pt para list-number */
+    font-family: serif;
+    font-weight: normal;
+}
+
+.no-page-break {
+    page-break-after: avoid;
+}
+
+.table-title {
+    text-align: center;
+    page-break-after: avoid;
+    font-weight: bold;
+}
+
+.cell-content {
+    page-break-after: avoid;
+    font-size: 10pt; /* ou 11pt para alguns trechos */
+}
+
+.image-center {
+    text-align: center;
+}
+
+.image-inline {
+    position: inline;
+}
