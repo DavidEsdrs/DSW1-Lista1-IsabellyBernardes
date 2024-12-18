@@ -1,48 +1,176 @@
+/* Incluindo importação da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Garamond&display=swap');
+
+/* Estilos para o corpo */
+body {
+    font-family: 'Garamond', serif;
+    margin: 1in 1.25in;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
 .header-primary {
+    text-align: center;
     clear: both;
+}
+
+.first-page-header {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px 0;
+
+}
+
+.header-logo {
+    flex: 1;
+    border-right: 2px solid #14a9ee;
+    /* Linha vertical à direita do logo */
+    padding-right: 10px;
+    text-align: right;
+    /* Alinha o logo à direita */
+}
+
+.header-title {
+    flex: 2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Alinha verticalmente */
+    padding: 0 10px;
+}
+
+.journal-name {
+    font-size: 25pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.volume-info {
+    font-size: 16pt;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-info {
+    flex: 1;
+    text-align: left;
+    font-size: 10pt;
+    border-left: 2px solid #14a9ee;
+    /* Linha vertical à esquerda */
+
+}
+
+.header-info p {
+    padding-bottom: 5px;
+    padding-top: 20px;
+    /* Adiciona padding superior */
+    padding-left: 10px;
+}
+
+.header-info2 p {
+    border-top: 2px solid #14a9ee;
+    /* Linha horizontal abaixo */
+    padding-top: 5px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .author-name {
     text-align: right;
+    font-family: 'Garamond', serif;
 }
 
-.paper-title,
+/* Estilos para o resto do documento continuam iguais */
+
+.paper-title {
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 12pt;
+    margin-bottom: 6pt;
+    border-bottom: 2px solid #000;
+    /* Adiciona linha horizontal */
+}
+
 .guidelines-title {
     text-align: center;
     font-size: 12pt;
     font-style: italic;
 }
 
-.main-title,
 .author-warning {
     text-align: center;
-    font-weight: bold;
+}
+
+.author-warning span {
     background-color: #ffff00;
+    font-weight: bold;
+}
+
+.main-title {
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+    font-family: 'Garamond', serif;
+    display: inline;
 }
 
 .table-grid,
 .data-table {
-    width: 436.5pt; /* ou 429.45pt para data-table */
+    width: 100%;
+    /* Ajusta a largura para se encaixar nas margens */
     margin-bottom: 0pt;
     border-collapse: collapse;
 }
 
-.cell,
+.cell {
+    padding-right: 5.4pt;
+    padding-left: 5.4pt;
+    vertical-align: top;
+    border: 0.75pt #c0c0c0;
+    background-color: #ffffff;
+    font-family: 'Garamond', serif;
+    font-size: 10pt;
+    /* ou 11pt para alguns trechos */
+}
+
 .data-cell {
     padding-right: 5.4pt;
     padding-left: 5.4pt;
     vertical-align: top;
-    border: 0.75pt solid #c0c0c0; /* para data-cell */
-    background-color: #ffffff; /* para data-cell */
+    border: 0.75pt solid #c0c0c0;
+    /* para data-cell */
+    background-color: #ffffff;
+    /* para data-cell */
+    font-family: 'Garamond', serif;
+    font-size: 10pt;
+    /* ou 11pt para alguns trechos */
 }
 
 .header-cell {
     border: solid 0.75pt;
     background-color: #c0c0c0;
+    font-family: 'Garamond', serif;
 }
 
-.paper-info,
+.paper-info {
+    font-family: 'Garamond', serif;
+    font-size: 11pt;
+    margin-bottom: 4px;
+}
+
 .text {
+    font-family: 'Garamond', serif;
+    font-size: 11pt;
 }
 
 .author-photo {
@@ -80,11 +208,14 @@
 }
 
 .list-paragraph {
-    margin-left: 28.06pt; /* ou 30.61pt para list-number */
+    margin-left: 28.06pt;
+    /* ou 30.61pt para list-number */
     margin-bottom: 0pt;
-    padding-left: 7.94pt; /* ou 5.39pt para list-number */
-    font-family: serif;
+    padding-left: 7.94pt;
+    /* ou 5.39pt para list-number */
+    font-family: 'Garamond', serif;
     font-weight: normal;
+    font-size: 11pt;
 }
 
 .no-page-break {
@@ -95,11 +226,14 @@
     text-align: center;
     page-break-after: avoid;
     font-weight: bold;
+    font-family: 'Garamond', serif;
 }
 
 .cell-content {
     page-break-after: avoid;
-    font-size: 10pt; /* ou 11pt para alguns trechos */
+    font-size: 10pt;
+    /* ou 11pt para alguns trechos */
+    font-family: 'Garamond', serif;
 }
 
 .image-center {
@@ -108,4 +242,89 @@
 
 .image-inline {
     position: inline;
+}
+
+h1,
+.main-title {
+    font-size: 14pt;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+    /* Adiciona linha horizontal */
+    margin-top: 12pt;
+    margin-bottom: 6pt;
+    font-family: 'Garamond', serif;
+}
+
+h2 {
+    font-size: 12pt;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 6pt;
+    margin-bottom: 3pt;
+    font-family: 'Garamond', serif;
+}
+
+h3 {
+    font-size: 11pt;
+    font-weight: bold;
+    margin-top: 3pt;
+    margin-bottom: 0pt;
+    font-family: 'Garamond', serif;
+}
+
+.abstract-note {
+    font-weight: normal;
+    font-size: 10pt;
+    font-family: 'Garamond', serif;
+    text-align: left;
+}
+
+.abstract-title {
+    font-weight: bold;
+    font-size: 14pt;
+    text-align: left;
+    font-family: 'Garamond', serif;
+}
+
+.highlight {
+    background-color: #ffff00;
+    font-weight: bold;
+    display: inline;
+}
+
+@media print {
+    .first-page-header {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .content {
+        margin-top: 150px;
+        /* Espaço para o cabeçalho na impressão */
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .author-name {
+        display: none;
+    }
+
+    @page :left {
+        .author-name {
+            display: none;
+        }
+    }
+
+    @page :right {
+        .author-name {
+            display: block;
+        }
+    }
 }
