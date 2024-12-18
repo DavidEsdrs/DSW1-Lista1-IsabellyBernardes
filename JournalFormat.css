@@ -19,16 +19,13 @@ body {
     display: flex;
     margin-bottom: 10px;
     padding: 10px 0;
-
 }
 
 .header-logo {
     flex: 1;
     border-right: 1px solid #14a9ee;
-    /* Linha vertical à direita do logo */
     padding-right: 10px;
     text-align: right;
-    /* Alinha o logo à direita */
 }
 
 .header-title {
@@ -334,8 +331,6 @@ h3 {
 
 @media print {
     .first-page-header {
-        display: block;
-        position: fixed;
         top: 0;
         width: 100%;
     }
