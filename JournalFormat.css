@@ -1,5 +1,6 @@
 /* Incluindo importação da fonte */
 @import url('https://fonts.googleapis.com/css2?family=Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:ital,wght@1,400&display=swap');
 
 /* Estilos para o corpo */
 body {
@@ -23,7 +24,7 @@ body {
 
 .header-logo {
     flex: 1;
-    border-right: 2px solid #14a9ee;
+    border-right: 1px solid #14a9ee;
     /* Linha vertical à direita do logo */
     padding-right: 10px;
     text-align: right;
@@ -59,7 +60,7 @@ body {
     flex: 1;
     text-align: left;
     font-size: 10pt;
-    border-left: 2px solid #14a9ee;
+    border-left: 1px solid #14a9ee;
     /* Linha vertical à esquerda */
 
 }
@@ -72,7 +73,7 @@ body {
 }
 
 .header-info2 p {
-    border-top: 2px solid #14a9ee;
+    border-top: 1px solid #14a9ee;
     /* Linha horizontal abaixo */
     padding-top: 5px;
 }
@@ -102,6 +103,8 @@ body {
 }
 
 .guidelines-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
     text-align: center;
     font-size: 12pt;
     font-style: italic;
@@ -295,6 +298,40 @@ h3 {
     display: inline;
 }
 
+.footer-primary {
+    text-align: left;
+    font-family: 'Garamond', serif;
+    font-size: 10pt;
+    margin-top: 10px;
+
+}
+
+.footer-primary2 {
+    text-align: left;
+    font-family: 'Garamond', serif;
+    font-size: 10pt;
+
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section {
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Garamond', serif;
+    font-size: 10pt;
+    color: #a56108;
+    ;
+}
+
+.first-page-footer p {
+    margin: 5px 0;
+}
+
+.first-page-footer strong {
+    font-weight: bold;
+}
+
 @media print {
     .first-page-header {
         display: block;
@@ -324,6 +361,28 @@ h3 {
 
     @page :right {
         .author-name {
+            display: block;
+        }
+    }
+
+    .first-page-footer {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .content {
+        margin-bottom: 100px;
+        /* Espaço para o rodapé na impressão */
+    }
+
+    body {
+        margin: 0;
+    }
+
+    @page :first {
+        .first-page-footer {
             display: block;
         }
     }
